@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifewood Admin</title>
+
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap (Fixed CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/admin-login.css" />
+  </head>
+  <body>
+    <img class="wave" src="assets/img/admin-login/wave.png" />
+
+    <div class="container">
+      <div class="img">
+        <img src="assets/img/admin-login/bg.png" />
+      </div>
+      <div class="login-content">
+        <form id="loginForm" novalidate>
+          <img src="assets/img/admin-login/avatar.svg" />
+          <h2 class="title">Welcome</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="div">
+              <h5>Email</h5>
+              <input type="email" class="input" id="email" required />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <h5>Password</h5>
+              <input type="password" class="input" id="password" required />
+              <span class="toggle-password">
+                <i class="fas fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <a href="#">Forgot Password?</a>
+          <input type="submit" class="btn" value="Login" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Toast for validation messages -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="validationToast"
+        class="toast align-items-center text-bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body text-white" id="toastMessage">
+            <i class="fas fa-exclamation-circle"></i> Please enter the needed
+            credentials.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/auth.js"></script>
+  </body>
+</html>
