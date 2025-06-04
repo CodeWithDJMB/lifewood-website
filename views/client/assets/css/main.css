@@ -234,6 +234,17 @@ h6 {
   border-right-color: var(--accent-color) !important;
 } */
 /* Modal Customization */
+textarea.form-control.is-valid,
+textarea.form-control:valid,
+select.form-select.is-valid,
+select.form-select:valid {
+  background-image: none !important;
+  padding-right: 0.75rem !important; /* resets extra right padding for icon */
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+
 .modal-header {
   background-color: var(--accent-color);
 }

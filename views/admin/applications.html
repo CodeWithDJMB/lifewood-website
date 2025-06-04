@@ -18,10 +18,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
   <!-- Custom styles for this template -->
@@ -344,6 +341,7 @@
                 <!-- <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span> -->
                 <!-- <img class="img-profile rounded-circle" src="img/undraw_profile.svg" /> -->
                 <i class="fa-solid fa-circle-user fa-2xl"></i>
+
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -425,76 +423,91 @@
   </div>
 
   <!-- View Full Info Modal -->
-  <div class="modal fade" id="viewInfoModal" tabindex="-1" aria-labelledby="viewInfoModalLabel" aria-hidden="true">
+<!-- View Full Info Modal -->
+<div class="modal fade" id="viewInfoModal" tabindex="-1" aria-labelledby="viewInfoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color: var(--green); color: white;">
-          <h5 class="modal-title" id="viewInfoModalLabel">Application Details</h5>
-          <a data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-square-xmark fa-2xl"
-              style="cursor:pointer;"></i></a>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="app_name" class="form-label"><strong>Name:</strong></label>
-                  <input type="text" id="app_name" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="app_address" class="form-label"><strong>Address:</strong></label>
-                  <input type="text" id="app_address" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="app_email" class="form-label"><strong>Email:</strong></label>
-                  <input type="text" id="app_email" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="app_phone" class="form-label"><strong>Phone:</strong></label>
-                  <input type="text" id="app_phone" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="app_position" class="form-label"><strong>Position:</strong></label>
-                  <input type="text" id="app_position" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="app_applied_at" class="form-label"><strong>Applied At:</strong></label>
-                  <input type="text" id="app_applied_at" class="form-control bg-light" readonly>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <label for="app_message" class="form-label"><strong>Applicant Message:</strong></label>
-                  <textarea id="app_message" class="form-control bg-light" rows="4" readonly></textarea>
-                </div>
-              </div>
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--green); color: white;">
+                <h5 class="modal-title" id="viewInfoModalLabel">Application Details</h5>
+                <a data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-square-xmark fa-2xl"
+                        style="cursor:pointer;"></i></a>
             </div>
-            <div class="col-md-4 text-center">
-              <img id="status_image" src="" alt="Status Image"
-                class="img-fluid mb-3 animate__animated animate__fadeIn animate__delay-400ms d-none"
-                style="max-width: 250px;">
-              <p id="status_date" class="mb-3 animate__animated animate__fadeIn animate__delay-800ms d-none"
-                style="font-size: 1.2em; font-weight: bold;"></p>
-              <div class="d-flex justify-content-center gap-2">
-                <button id="viewResumeBtn"
-                  class="btn btn-primary animate__animated animate__fadeIn animate__delay-1s d-none"
-                  data-tippy-content="View Resume" style="margin-right: 5px; width:45px;">
-                  <i class="fas fa-file-alt"></i>
-                </button>
-                <button id="downloadResumeBtn"
-                  class="btn btn-warning animate__animated animate__fadeIn animate__delay-1s d-none"
-                  data-tippy-content="Download Resume" style="width:45px;">
-                  <i class="fas fa-download"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- Applicant Details Form Fields -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="app_name" class="form-label"><strong>Name:</strong></label>
+                                <input type="text" id="app_name" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="app_address" class="form-label"><strong>Address:</strong></label>
+                                <input type="text" id="app_address" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="app_email" class="form-label"><strong>Email:</strong></label>
+                                <input type="text" id="app_email" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="app_phone" class="form-label"><strong>Phone:</strong></label>
+                                <input type="text" id="app_phone" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="app_position" class="form-label"><strong>Position:</strong></label>
+                                <input type="text" id="app_position" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="app_applied_at" class="form-label"><strong>Applied At:</strong></label>
+                                <input type="text" id="app_applied_at" class="form-control bg-light" readonly>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="app_message" class="form-label"><strong>Applicant Message:</strong></label>
+                                <textarea id="app_message" class="form-control bg-light" rows="4" readonly></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img id="status_image" src="" alt="Status Image"
+                            class="img-fluid mb-3 animate__animated d-none" 
+                            style="max-width: 250px;">
+                        <p id="status_date_display" class="mb-3 animate__animated d-none"
+                            style="font-size: 1.2em; font-weight: bold;"></p>
 
+                        <div class="d-flex justify-content-center gap-2 mb-2" style="display: flex; gap: 6px;">
+                            <button id="viewResumeBtn"
+                                class="btn btn-primary modal-action-button animate__animated d-none"
+                                data-tippy-content="View Resume">
+                                <i class="fas fa-file-alt"></i>
+                            </button>
+                            <button id="downloadResumeBtn"
+                                class="btn btn-warning modal-action-button animate__animated d-none"
+                                data-tippy-content="Download Resume">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-2" style="display: flex; gap: 6px;">
+                            <button id="modalApproveApplicationBtn" 
+                                class="btn btn-success btn-sm approve-btn modal-action-button animate__animated d-none"
+                                data-tippy-content="Approve Application">
+                                <i class="fas fa-check"></i>
+                            </button>
+                            <button id="modalRejectApplicationBtn" 
+                                class="btn btn-danger btn-sm reject-btn modal-action-button animate__animated d-none"
+                                data-tippy-content="Reject Application">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
   <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer">
     <!-- Toast messages will be injected here -->
   </div>

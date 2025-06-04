@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2025 at 05:49 AM
+-- Generation Time: Jun 03, 2025 at 03:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`admin_id`, `admin_pic`, `admin_fname`, `admin_lname`, `admin_role`, `admin_email`, `admin_password`) VALUES
-(1, NULL, 'Davide', 'Ompokern', 'super_admin', 'david@gmail.com', '$2b$10$hwsD9STdbWbjmTaSPtkuwOhgzvGJl2iEetbDsqV9UBOtllRScQJhu');
+(2, NULL, 'Davide', 'Ompokern', 'super_admin', 'admin@gmail.com', '$2b$10$gly3Zf0hj/Jqoe.SMMdLweZxS0BOzK4eMuHiXGI73PLmsFEhF2/Bm');
 
 -- --------------------------------------------------------
 
@@ -71,9 +71,9 @@ CREATE TABLE `applications` (
 --
 
 INSERT INTO `applications` (`app_id`, `app_fname`, `app_lname`, `app_address`, `app_resume_path`, `app_email`, `app_phone`, `app_position`, `app_message`, `app_applied_at`, `app_status`, `app_approved_at`, `app_rejected_at`) VALUES
-(25, 'June Vincent', 'Fullido', 'Taga Igop City', 'uploads\\1742173556657-Basnillo-Resume.pdf', 'juneigop@gmail.com', '9292292929', 'student', NULL, '2025-03-17 01:05:56', 'pending', NULL, NULL),
-(26, 'Michael Bacalso', 'El Jordan', 'Taga NBA', 'uploads\\1742178231434-Basnillo-Resume.pdf', 'mikel@gmaili.com', '9292292229', 'student', NULL, '2025-03-17 02:23:51', 'pending', NULL, NULL),
-(27, 'Donna', 'Paella', 'Taga Lifewood', 'uploads\\1742178928238-Basnillo-Resume.pdf', 'donnamy@gmail.com', '9292292229', 'developer', NULL, '2025-03-17 02:35:28', 'approved', '2025-03-17 02:36:03', NULL);
+(25, 'John', 'Doe', '123 Mabini Street, Barangay Malinis, Quezon City', 'uploads\\1742173556657-Basnillo-Resume.pdf', 'john.doe@gmail.com', '9392194920', 'Back-End Developer', NULL, '2025-05-28 01:05:56', 'approved', '2025-06-01 14:46:34', NULL),
+(26, 'Jane', 'Doe', '456 Bonifacio Avenue, Barangay Bagong Buhay, Cebu City', 'uploads\\1742178231434-Basnillo-Resume.pdf', 'jane.doe@gmaili.com', '9292292229', 'Front-End Developer', NULL, '2025-05-30 02:23:51', 'rejected', '2025-06-01 14:42:09', NULL),
+(49, 'Bob', 'Johnson', '123 M. J. Cuenco Avenue, Brgy. Mabolo Cebu City', 'uploads\\1748828275426-bob-johnson-resume.pdf', 'bob.johnson@gmail.com', '9121231238', 'Full-Stack Developer', 'I am very interested in this position and hope to be given the opportunity to prove myself by doing my best.', '2025-06-02 01:37:55', 'approved', '2025-06-02 01:40:51', NULL);
 
 --
 -- Indexes for dumped tables
@@ -101,13 +101,13 @@ ALTER TABLE `applications`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `applications`
 --
 ALTER TABLE `applications`
-  MODIFY `app_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `app_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

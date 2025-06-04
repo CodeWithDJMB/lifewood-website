@@ -640,78 +640,83 @@
     </a>
     <!-- Modals -->
     <!-- Apply Now Modal -->
-    <div class="modal fade " id="applyNowModal" tabindex="-1" aria-labelledby="applyNowModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="applyNowModalLabel">Application Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="applyNowForm" class="needs-validation" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="firstName" name="firstName" required>
-                  <div class="invalid-feedback">Please enter your first name.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="lastName" name="lastName" required>
-                  <div class="invalid-feedback">Please enter your last name.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="address" class="form-label">Address <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="address" name="address" required>
-                  <div class="invalid-feedback">Please enter your address.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="resume" class="form-label">Resume/CV <span class="text-danger">*</span></label>
-                  <input type="file" class="form-control" id="resume" name="resume" required>
-                  <div class="invalid-feedback">Please upload your resume/CV.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@gmail.com"
-                    required>
-                  <div class="invalid-feedback">Please enter a valid email address.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                  <div class="input-group">
-                    <span class="input-group-text">+63</span>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="9123456789"
-                      pattern="^\d{10}$" required title="Please enter a 10-digit phone number">
-                    <div class="invalid-feedback">Please enter a valid phone number (10 digits).</div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="position" class="form-label">Position <span class="text-danger">*</span></label>
-                  <select class="form-select" id="position" name="position" required>
-                    <option value="" disabled selected>Select a position</option>
-                    <option value="student">Student</option>
-                    <option value="web designer">Web Designer</option>
-                    <option value="front end developer">Front End Developer</option>
-                    <option value="back end developer">Back End Developer</option>
-                    <option value="full stack developer">Full Stack Developer</option>
-                  </select>
-                  <div class="invalid-feedback">Please select a position.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="3"
-                    placeholder="Enter your message"></textarea>
-                </div>
+  <div class="modal fade" id="applyNowModal" tabindex="-1" aria-labelledby="applyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="applyNowModalLabel">Application Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="applyNowForm" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="firstName" name="firstName" required>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please enter your first name.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="lastName" name="lastName" required>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please enter your last name.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="address" class="form-label">Address <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="address" name="address" required>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please enter your address.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="resume" class="form-label">Resume/CV <span class="text-danger">*</span></label>
+              <input type="file" class="form-control" id="resume" name="resume" required>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please upload your resume/CV.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="your.email@gmail.com" required>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please enter a valid email address.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text">+63</span>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="9123456789"
+                  pattern="^\d{10}$" required title="Please enter a 10-digit phone number">
+                <div class="invalid-feedback"><span class="text-danger"></span> Please enter a valid phone number (10 digits).</div>
               </div>
-              <div class="modal-footer justify-content-end">
-                <button type="button" class="btn secondary-btn" data-bs-dismiss="modal">Cancel</button>
-                <button type="submit" class="btn primary-btn">Submit</button>
-              </div>
-            </form>
+            </div>
+
+            <div class="col-md-6">
+              <label for="position" class="form-label">Position</label>
+              <select class="form-select" id="position" name="position" required>
+                <option value="" disabled selected>Select a position</option>
+                <option value="Front-End Developer">Front-End Developer</option>
+                <option value="Back-End Developer">Back-End Developer</option>
+                <option value="Full-Stack Developer">Full-Stack Developer</option>
+              </select>
+              <div class="invalid-feedback"><span class="text-danger"></span> Please select a position.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3"
+                placeholder="Enter your message"></textarea>
+            </div>
           </div>
-        </div>
+
+          <div class="modal-footer justify-content-end">
+            <button type="button" class="btn secondary-btn" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn primary-btn" id="submitApplyNowButton">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -732,10 +737,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Main JS File -->
-
+    
     <!-- Sweet alert -->
     <script src="assets/vendor/sweetalert2/sweetalert2@11.js"></script>
-
+    
     <!-- My Scripts -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/application.js"></script>

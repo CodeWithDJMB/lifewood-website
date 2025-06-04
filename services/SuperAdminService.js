@@ -9,11 +9,11 @@ async function insertSuperAdmin() {
 
         if (superAdminExists.length === 0) {
             console.log('Inserting super admin...');
-            const hashedPassword = await bcrypt.hash('davidisadmin', 10); // Hash the password
+            const hashedPassword = await bcrypt.hash('akoayadmin', 10); // Hash the password
 
             await db.query(
                 'INSERT INTO admins (admin_fname, admin_lname, admin_role, admin_email, admin_password) VALUES (?, ?, ?, ?, ?)',
-                ['Davide', 'Ompokern', 'super_admin', 'david@gmail.com', hashedPassword]
+                ['Davide', 'Ompokern', 'super_admin', 'admin@gmail.com', hashedPassword]
             );
 
             console.log('Super admin inserted successfully');

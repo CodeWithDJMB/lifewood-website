@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 exports.apply = async (req, res) => {
-    const { firstName, lastName, email, phone, address, position } = req.body;
+    const { firstName, lastName, email, phone, address, position, message } = req.body;
     const resume = req.file; // Multer should handle this
 
     // Validate required fields
@@ -19,10 +19,10 @@ exports.apply = async (req, res) => {
 
     try {
         const query = `
-            INSERT INTO applications (app_fname, app_lname, app_email, app_phone, app_address, app_position, app_resume_path, app_status, app_applied_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, 'pending', NOW())
+            INSERT INTO applications (app_fname, app_lname, app_email, app_phone, app_address, app_position, app_resume_path, app_message, app_status, app_applied_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending', NOW())
         `;
-        await db.query(query, [firstName, lastName, email, phone, address, position, resumePath]);
+        await db.query(query, [firstName, lastName, email, phone, address, position, resumePath, message]);
 
         res.status(200).json({ message: 'Application submitted successfully' });
     } catch (error) {
