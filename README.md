@@ -1,4 +1,5 @@
 🌲 LIFEWOOD
+
 Lifewood is a Node.js web application primarily focused on the frontend and user experience for the Lifewood Company.
 It acts as a client-facing website with interactive features and an admin panel for backend control.
 The design is inspired by KnightOne and SB Admin 2, with my own custom modifications and additions.
@@ -9,6 +10,7 @@ Key functionalities include:
 - File uploads (such as resumes)
 - Admin login panel
 - Admin control to view, accept, or reject submitted applications
+
 
 ⚙️ INSTALLATION & USAGE
 - Install `Node.js`
@@ -39,6 +41,7 @@ Key functionalities include:
 
 
 🖥️ USING LIVE SERVER (for static HTML preview)
+
     If you're editing frontend pages or static HTML, you can preview them using Live Server:
         In Visual Studio Code:
             Install the "Live Server" extension.
@@ -51,5 +54,6 @@ Key functionalities include:
 
 
 ✅ YOU'RE READY!
+
     To view your backend in action, go to: http://localhost:3000 (or your specified port)
     Ensure Apache and MySQL are running in XAMPP before starting the server
