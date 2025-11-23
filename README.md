@@ -1,8 +1,9 @@
 🌲 LIFEWOOD
 
-Lifewood is a Node.js web application primarily focused on the frontend and user experience for the Lifewood Company.
-It acts as a client-facing website with interactive features and an admin panel for backend control.
+Lifewood is a Node.js web application primarily focused on the frontend and user experience for the Lifewood Company, featuring a client-facing website with interactive features and an admin panel for some backend functionality. The project was completed within a short timeframe set by Lifewood as an internship project to gain practical experience and improve frontend skills.
 
+
+https://github.com/user-attachments/assets/d6eebc0a-9440-4801-8c0a-c2bc78f3dd7a 
 
 Key functionalities include:
 - Displaying company profile and information
